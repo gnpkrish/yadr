@@ -8,7 +8,7 @@
     # Yet Another Dotfile Repo v1.1
     # Now with Prezto and Vundle!
 
-    sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+    sh -c "`curl -fsSL https://github.com/gnpkrish/yadr/raw/master/install.sh`"
 
 **Always be sure to run `rake update` after pulling to ensure plugins are updated**
 
@@ -19,7 +19,6 @@ from scouring other people's dotfile repos, blogs, and projects.
 
 **YADR is an opinionated dotfile repo that will make your heart sing**
 
-  * OSX is the best OS. MacVim is the best editor. Zsh is the best shell. Pry is the best irb. Solarized is the best color scheme.
   * Apple-style philosophy: make everything Just Work and Look Good. Don't worry about too many options.
   * All common commands should be two and three character mnemonic aliases - less keystrokes, RSI reduction
   * Avoid stressful hand motions, e.g. remap Esc to caps lock key, remap underscore to Alt-k in vim, make window management in vim easy.
@@ -44,19 +43,14 @@ Installation is automated via `rake` and the `yadr` command. To get
 started please run:
 
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`"
+sh -c "`curl -fsSL https://github.com/gnpkrish/yadr/raw/master/install.sh`"
 ```
 
 **Note:** YADR will automatically install all of its subcomponents. If you want to be asked
 about each one, use:
 ```bash
-sh -c "`curl -fsSL https://raw.github.com/skwp/dotfiles/master/install.sh`" -s ask
+sh -c "`curl -fsSL https://github.com/gnpkrish/yadr/raw/master/install.sh`" -s ask
 ```
-
-# Additional Installation
-
- * [Highly recommended: Install iTerm theme](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized)
- * [Highly recommended: Remap caps-lock to escape with PCKeyboardHack](http://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html)
 
 The escape key is the single most used key in vim.
 Old keyboards used to have Ctrl where caps lock is today. But it's even better if you put escape there.
@@ -75,13 +69,6 @@ rake update
 # What's included, and how to customize?
 
 Read on to learn what YADR provides!
-
-### [Homebrew](http://mxcl.github.com/homebrew/)
-
-Homebrew is _the missing package manager for OSX_. Installed automatically.
-
-We automatically install a few useful packages including ctags, git, and hub, and the silver searcher ('ag')
-You can install macvim from brew as well, or download it from their website.
 
 ### Github Issues: [ghi gem](https://github.com/stephencelis/ghi)
 
@@ -448,27 +435,6 @@ You can then commit the change. It's good to have your own fork of this project 
 
 
 ## Miscellaneous
-
-
-### OSX Hacks
-The osx file is a bash script that sets up sensible defaults for devs and power users
-under osx. Read through it before running it. To use:
-
-    ./osx
-
-These hacks are Lion-centric. May not work for other OS'es. My favorite mods include:
-
-  * Ultra fast key repeat rate (now you can scroll super quick using j/k)
-  * No disk image verification (downloaded files open quicker)
-  * Display the ~/Library folder in finder (hidden in Lion)
-
-
-### Other recommended OSX tools
-
- * NValt - Notational Velocity alternative fork - http://brettterpstra.com/project/nvalt/ - syncs with SimpleNote
- * Vimium for Chrome - vim style browsing. The `f` to type the two char alias of any link is worth it.
- * QuickCursor - gives you Apple-Shift-E to edit any OSX text field in vim.
-
 
 ### Credits
 
